@@ -4,6 +4,7 @@ description: Right when you were starting to feel good about your Webpack config
 author: "@Dave_Conner"
 tags: [javascript, pwa]
 date: March 10, 2020
+comments: true
 ---
 
 

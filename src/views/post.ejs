@@ -8,6 +8,7 @@
     <h1><%-JSON.stringify(post.title).replace(/\"/g, "")%></h2>
     <a href="https://twitter.com/<%-JSON.stringify(post.author).replace(/\"/g, "")%>"><%-JSON.stringify(post.author).replace(/\"/g, "")%></a>
     <%-body%>
+    <%- include partials/comments.ejs %>
   </div>
 <!-- /body -->
 

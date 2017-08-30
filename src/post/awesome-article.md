@@ -4,6 +4,7 @@ description: So how can we get our webpack config back into working shape? For s
 author: "@Dave_Conner"
 tags: [javascript, webpack]
 date: March 8, 2017
+comments: true
 ---
 
 

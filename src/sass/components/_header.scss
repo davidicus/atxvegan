@@ -1,4 +1,5 @@
 @import '../utils/colors';
+@import '../utils/utils';
 
 .site {
   &-header {
@@ -11,19 +12,28 @@
   }
   //.site-log
   &-logo {
+    background: $pink;
     font-size: 2.9rem;
     line-height: 1.2;
     margin: 0;
+    padding: 0 0.25em;
+    position: relative;
     vertical-align: middle;
 
     &-link {
       align-items: center;
-      color: $blue-new;
+      color: $white;
       display: flex;
+      flex-direction: column;
+      font-size: 0.55em;
       height: 100%;
+      justify-content: center;
+      line-height: 1;
+      transform: translateY(rem(5));
 
-      svg {
-        width: rem(70)
+      span:nth-child(2) {
+        font-size: 0.7em;
+        transform: translateY(-17%);
       }
 
       path {
@@ -31,6 +41,17 @@
       }
     }
   }
+
+  &-logo::after {
+    background: $pink;
+    content: '';
+    height: rem(10);
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+
   //.site-nav
   &-nav {
     display: inline-block;

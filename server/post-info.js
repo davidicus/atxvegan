@@ -26,7 +26,8 @@ const md = new markdown({
     }).join('');
 
     return `<pre><code><table class='code-table'>${contentTable}</table></code></pre>`;
-  }
+  },
+  html: true,
 });
 
 
