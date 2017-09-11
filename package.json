@@ -1,7 +1,7 @@
 {
-  "name": "Devwatch",
+  "name": "ATXVegan",
   "version": "0.0.1",
-  "description": "A Jekyll replacement",
+  "description": "Vegan recipes and reviews",
   "scripts": {
     "start": "npm run compile:build & npm-run-all --parallel watch:* & npm run start:dev",
     "start:dev": "babel-node ./server/server.js",

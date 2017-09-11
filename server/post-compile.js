@@ -24,6 +24,8 @@ _async_ (() => {
   //array of post tag link objects
   const tagLinks = [];
 
+  //tag object that holds post for reviews
+  const reviewPost = [];
 
   // ---------------------------------
   // -- create nav and post objects --
@@ -38,7 +40,11 @@ _async_ (() => {
     //add category link that will contain subnav
     totalNav = [
       {
-        Text: `catagories`
+        Link:`reviews`,
+        Text: 'reviews'
+      },
+      {
+        Text: `recipes`
       }
     ];
 
@@ -61,15 +67,17 @@ _async_ (() => {
 
     //create subnav with tags and create each tags list
     postTags.map((item, i) => {
-
+      let link = {};
       //create link object to be passed into nav array for ejs template
-      const link = {
-        Link:`${postTags[i]}`,
-        Text: `${postTags[i]}`
-      }
+      if (postTags[i] !== 'review') {
+        link = {
+          Link:`${postTags[i]}`,
+          Text: `${postTags[i]}`
+        }
 
-      //push link object onto nav array
-      tagLinks.push(link);
+        //push link object onto nav array
+        tagLinks.push(link);
+      }
 
       //create tag list and push each post with the tag to its list
       tagPost[item] = [];
@@ -151,8 +159,12 @@ _async_ (() => {
         });
 
         if (page.page === 0) {
+          (tag === 'review') ?
+          writeFile(`docs/reviews/index.html`, taghtml) :
           writeFile(`docs/${tag}/index.html`, taghtml);
         } else {
+          (tag === 'review') ?
+          writeFile(`docs/reviews/index-${i}.html`, taghtml) :
           writeFile(`docs/${tag}/index-${i}.html`, taghtml);
         }
 
@@ -180,6 +192,9 @@ _async_ (() => {
       const template = fs.readFileSync(`src/views/pages/${page}`, 'utf-8');
       const html = ejs.render ( template , {
         nav: totalNav,
+        page: page.page,
+        pages: page.pages,
+        list: page.list,
         filename: __dirname.replace('/server', '') + `/src/views/pages/${page}`
       });
       writeFile(`docs/${pageLink}.html`, html);

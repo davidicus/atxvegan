@@ -1,11 +1,13 @@
 ---
-title: Migrating your Webpack config to Webpack V2
-description: Right when you were starting to feel good about your Webpack config file Webpack V2 was released and rained on your parade.
+title: Buffalo Chik'n Sandwich
+description: Right when you were starting to feel good about your Webpack config file Webpack V2 was released and rained on your parade. Staying on the bleeding edge can get tiresome for as soon as you update Webpack and try to compile you get an error. The good news?
 author: "@Dave_Conner"
-tags: [javascript, pwa]
-date: March 10, 2017
+tags: [american, dinner]
+date: March 8, 2017
+comments: true
 ---
 
+#Webpack v.2
 
 ## resources:
 

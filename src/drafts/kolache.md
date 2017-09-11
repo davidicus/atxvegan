@@ -1,9 +1,10 @@
 ---
-title: TEsting this ish like whoa!
+title: Austin Style Kolache
 description: Right when you were starting to feel good about your Webpack config file Webpack V2 was released and rained on your parade. Staying on the bleeding edge can get tiresome.
 author: "@Dave_Conner"
-tags: [javascript]
+tags: [czech, appetizer, fast-meals]
 date: March 8, 2017
+comments: true
 ---
 
 

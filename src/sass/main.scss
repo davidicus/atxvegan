@@ -50,6 +50,15 @@ a {
     flex: 2;
     flex-direction: column;
     padding-bottom: 4em;
+
+    ol {
+      list-style: decimal;
+      margin: 0 0 1.5em 1em;
+
+      li {
+        padding-left: 0.25em;
+      }
+    }
   }
 
   &-footer {
