@@ -11,6 +11,8 @@ comments: true
 
 Chicken salad is definitely one of the items I miss from my omni days. This recipe is a quick and easy replacement which satisfies my craving for deli style chicken salad. I like cooking from scratch but sometimes there is just not enough hours in the day. So for this recipe we will be using a store bought vegan grilled chik'n. I like the Tofurky brand of grilled chik'n but you can use whatever you prefer.
 
+**Cook time:** 10 minutes
+
 ## Ingredients:
 1. Tofurky grilled chik'n - ( one package )
 3. vegan mayo - ( 1/2 cup )
