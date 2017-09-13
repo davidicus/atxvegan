@@ -4,7 +4,7 @@
 .site {
   &-header {
     border-bottom: rem(1) solid $gray-lightest;
-    border-top: 0.3em solid $black;
+    // border-top: 0.3em solid $black;
     display: flex;
     font-size: 1rem;
     margin-bottom: 3em;
@@ -16,7 +16,6 @@
     font-size: 2.9rem;
     line-height: 1.2;
     margin: 0;
-    padding: 0 0.25em;
     position: relative;
     vertical-align: middle;
 
@@ -55,6 +54,7 @@
   //.site-nav
   &-nav {
     display: inline-block;
+    height: 100%;
     margin: auto 0 auto auto;
     vertical-align: middle;
   }
@@ -66,6 +66,7 @@
 
   &-nav-list {
     display: flex;
+    height: 100%;
   }
 
   //.site-nav-list
@@ -99,7 +100,9 @@
 
   //.site-nav-list-item
   &-nav-list-item {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     vertical-align: middle;
 
@@ -125,7 +128,8 @@
   }
   //.site-nav-list-item-link
   &-nav-list-item-link {
-    // color: $blue-new;
+    color: $pink;
+    cursor: pointer;
     display: block;
     padding: 1em;
 
@@ -173,9 +177,11 @@
     padding-left: 0.5em;
     right: 100%;
     transform: translateX(0%);
-    // transition: transform  0.15s ease-in-out, background-color  0.15s ease, width  0.15s ease-in-out, border  0.15s ease-in-out, opacity 0.05s ease;
-    // position: absolute;
-    // z-index: 10;
+    @include bp(600, max-width) {
+      transition: transform  0.15s ease-in-out, background-color  0.15s ease, width  0.15s ease-in-out, border  0.15s ease-in-out, opacity 0.05s ease;
+      position: absolute;
+      z-index: 10;
+    }
 
     &:focus {
       border: rem(1) solid $pink;
@@ -185,13 +191,15 @@
       // z-index: 9;
     }
 
-    // &:not(:focus) {
-    //   background: transparent;
-    //   opacity: 0;
-    //   transform: translateX(100%);
-    //   width: rem(42);
-    //   z-index: 9999
-    // }
+    &:not(:focus) {
+      @include bp(600, max-width) {
+        background: transparent;
+        opacity: 0;
+        transform: translateX(100%);
+        width: rem(42);
+        z-index: 9999;
+      }
+    }
 
     &:focus + .search-btn {
       background: $pink;

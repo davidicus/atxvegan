@@ -3,13 +3,14 @@
 <!-- /head -->
 
 <!-- body -->
+<main class="wrap wrap-main">
   <%- include partials/header.ejs %>
-  <div class="wrap wrap-body">
+  <section class="wrap wrap-body">
     <h1><%-JSON.stringify(post.title).replace(/\"/g, "")%></h2>
     <a href="https://twitter.com/<%-JSON.stringify(post.author).replace(/\"/g, "")%>"><%-JSON.stringify(post.author).replace(/\"/g, "")%></a>
     <%-body%>
     <%- include partials/comments.ejs %>
-  </div>
+  </section>
 <!-- /body -->
 
 <!-- footer -->

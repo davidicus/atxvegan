@@ -2,7 +2,18 @@
   <div class="wrap wrap-head">
     <h1 class="site-logo">
       <a class="site-logo-link" href="<%-process.env.npm_package_reponame%>/">
-        <span>ATX</span><span>Vegan</span>
+        <!-- <span>ATX</span><span>Vegan</span> -->
+        <svg width="75" height="72" viewBox="0 0 129 129" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#FE049A" d="M0 0h129v129H0z"/>
+            <text font-family="Impact" font-size="52" font-style="condensed" font-weight="700" letter-spacing=".404" fill="#FFF">
+              <tspan x="28" y="74">ATX</tspan>
+            </text>
+            <text font-family="Avenir-Black, Avenir" font-size="27" font-weight="700" letter-spacing="-.54" fill="#FFF">
+              <tspan x="28" y="95">vegan</tspan>
+            </text>
+          </g>
+        </svg>
       </a>
     </h1>
     <nav class="nav site-nav">
@@ -10,15 +21,19 @@
         <% for(var i = 0; i < nav.length; i++) {%>
           <% if(nav[i].Sub){ %>
             <li class="site-nav-list-item">
-              <a class="site-nav-list-item-link toggle" href="/"><%=nav[i].Text%></a>
+              <span class="site-nav-list-item-link toggle" ><%=nav[i].Text%></span>
               <ul class="site-nav-sub-list">
                 <% for(var j = 0; j < nav[i].Sub.length; j++) {%>
-                  <li class="site-nav-sub-list-item"><a class="site-nav-sub-list-item-link" href="<%-process.env.npm_package_reponame%>/<%=nav[i].Sub[j].Link%>"><%=nav[i].Sub[j].Text%></a></li>
+                  <li class="site-nav-sub-list-item">
+                    <a class="site-nav-sub-list-item-link" href="<%-process.env.npm_package_reponame%>/<%=nav[i].Sub[j].Link%>"><%=nav[i].Sub[j].Text%></a>
+                  </li>
                 <%}%>
               </ul>
             </li>
           <% } else{ %>
-            <li class="site-nav-list-item"><a class="site-nav-list-item-link" href="<%-process.env.npm_package_reponame%>/<%=nav[i].Link%>"><%=nav[i].Text%></a></li>
+            <li class="site-nav-list-item">
+              <a class="site-nav-list-item-link" href="<%-process.env.npm_package_reponame%>/<%=nav[i].Link%>"><%=nav[i].Text%></a>
+            </li>
           <% } %>
         <%}%>
       </ul>

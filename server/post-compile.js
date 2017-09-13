@@ -39,10 +39,10 @@ _async_ (() => {
 
     //add category link that will contain subnav
     totalNav = [
-      {
-        Link:`reviews`,
-        Text: 'reviews'
-      },
+      // {
+      //   Link:`reviews`,
+      //   Text: 'reviews'
+      // },
       {
         Text: `recipes`
       }
