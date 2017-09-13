@@ -234,5 +234,9 @@ _async_ (() => {
     writeFile(`docs/index.html`, indexhtml);
   }
 
+  const cname = fs.readFileSync(`./CNAME`);
+  writeFile(`docs/CNAME`, cname);
+  console.log(chalk.red.bold(`COPIED CNAME`));
+
   console.log(chalk.red.bold("SITE GENERATED"));
 })();
