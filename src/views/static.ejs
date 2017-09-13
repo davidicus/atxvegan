@@ -7,7 +7,7 @@
 
 <main class="wrap wrap-main">
   <%- include partials/header.ejs %>
-  <section class="wrap wrap-body">
+  <section class="wrap wrap-body post">
     <h1 class="static-header"><%-JSON.stringify(post.title).replace(/\"/g, "")%></h2>
     <%-body%>
     <% if(post.comments === true){ %>

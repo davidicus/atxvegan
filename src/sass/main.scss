@@ -51,13 +51,21 @@ a {
     flex-direction: column;
     padding-bottom: 4em;
 
-    ol {
-      list-style: decimal;
+    &.post ol,
+    &.post ul {
       margin: 0 0 1.5em 1em;
 
       li {
         padding-left: 0.25em;
       }
+    }
+
+    &.post ol {
+      list-style: decimal;
+    }
+
+    &.post ul {
+      list-style: disc;
     }
   }
 
