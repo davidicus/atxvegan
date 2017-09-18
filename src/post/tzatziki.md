@@ -42,4 +42,4 @@ Directions:
 - Add cucumber (and herbs, if using) to tofu dip, and stir to blend.
 - Cover and refrigerate for at least 1 hours.
 
-And it is that simple. The longer this sits in the fridge the more these flavors permeate your tzatziki sauce. I eat this with crackers and now my falafel wraps are exactly how I remember them. Let me know what you think and enjoy! Thanks.
+And it is that simple. The longer this sits in the fridge the more these flavors permeate your tzatziki sauce. I eat this with crackers and now my falafel wraps are exactly how I remember them. Let me know what you think and enjoy! Thanks. 
