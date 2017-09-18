@@ -2,7 +2,7 @@
 title: Tzatziki
 description: Mediterranean food is some of the best. Luckily most things like hummus, tahini, and baba ghanoush are vegan friendly. Tzatziki, which happens to be my favorite, seemed like something I was going to have to learn to live without. This vegan tzatziki recipe is amazing and convinced me that maybe old favorites are not gone for good.
 author: "@Dave_Conner"
-tags: [Greek, Sauce, favorites]
+tags: [greek, Sauce, favorites]
 date: September 15, 2017
 comments: true
 ---

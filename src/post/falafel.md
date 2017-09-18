@@ -36,11 +36,11 @@ These falafel are so damn good. It takes less than five to prepare this mix. The
 - 1 tsp of hot red pepper
 - 1 tsp of pepper
 - 1 tsp of baking powder
-- 6 tbsp of flour
+- 6 tbsp of chickpea flour
 
 ## steps:
 - combine all produce and all spices except baking powder and flour into processor and pulse for a rough chop, combining but not puree.
-- add the baking powder and flour to mix and pulse till incorporated.
+- add the baking powder and flour (can use regular flour if necessary) to mix and pulse till incorporated.
 - spray coconut spray into muffin tin to prevent sticking.
 - transfer mix into bowl and roll little balls and put into small muffin tin. It should roll with minimum sticking to the hands. If its real sticky add flour little at a time till its rolling and not leaving huge chunks
 - put into oven at 400 degrees and bake for 20 mins
